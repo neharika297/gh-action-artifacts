@@ -41,6 +41,9 @@ jobs:
         with:
           name: dist-files
       - name: Display downloaded files
-        run: ls -larth
+        run: |
+          ls -larth
+          cd dist
+          ls -larth
       - name: Deploy
         run: echo "Deploying..."
